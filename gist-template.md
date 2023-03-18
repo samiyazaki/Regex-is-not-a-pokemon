@@ -1,6 +1,6 @@
 # Utilizing Regex to Match Email Addresses
 
-So you want to learn Regex in relation to matching email addresses? This is a great place to start. This gist will explain the regex components you will need to know to match email addresses. Hopefully you can use this information to build your own regex to match email addresses. If you have any questions, please let me know by opening an issue on the GitHub repo or sending me an email at smsmiyazaki@gmail.com.
+So you want to learn Regex in relation to matching email addresses? This is a great place to start. This gist will explain the regex components you will need to know to match email addresses. If you have any questions, please let me know by opening an issue on the GitHub repo or sending me an email at smsmiyazaki@gmail.com.
 
 ## Summary
 
@@ -37,6 +37,10 @@ The second group is delineated by the following characters `([\da-z\.-]+)`and co
 The third group is delineated by the following characters `([a-z\.]{2,6})` and contains the email service domain. You can see that this group allows for any lowercase letter and a period. This group also allows for any combination of these characters and limits the length of the users email service domain to a minimum of 2 characters and a maximum of 6 characters.
 
 ### Bracket Expressions
+Bracket expressions are used to determine if a character is in a provided set of characters. The data is enclosed in square brackets and when referring to matching email addresses, the brackets help to determine if the characters are allowed in each group.
+`[a-z0-9_\.-]`: This bracket expression allows for any lowercase letter, any number from 0-9, an underscore, a period, and a dash.
+`[\da-z\.-]`: This bracket expression allows for any digit, any lowercase letter, a period and a dash.
+`[a-z\.]`: This bracket expression allows for any lowercase letter and a period.
 
 ### Character Classes
 
