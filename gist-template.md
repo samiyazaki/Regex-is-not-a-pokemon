@@ -1,10 +1,10 @@
-# Title (replace with your title)
+# Title (Utilizing Regex to Match Email Addresses)
 
-Introductory paragraph (replace this with your text)
+So you want to learn Regex in relation to matching email addresses? This is a great place to start. This gist will explain the regex components you will need to know to match email addresses. Hopefully you can use this information to build your own regex to match email addresses. If you have any questions, please let me know by opening an issue on the GitHub repo or sending me an email at smsmiyazaki@gmail.com.
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+I will be instructing you on ways in which to match email addresses using Regex, which is a universal way to help search for patterns in text. Regex is an extremely useful tool to employ as a developer and one you should at least be somewhat comfortable utilizing. The data we will be searching for in this tutorial will be `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`.
 
 ## Table of Contents
 
