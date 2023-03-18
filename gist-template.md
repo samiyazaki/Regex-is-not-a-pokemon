@@ -29,7 +29,12 @@ Thus when we are looking for a string that starts with a letter and ends with a 
 When developing Regular Expressions for email validation users can use two types of quantifiers:
 `+`: Which connects the previous character to the next character; or in this case, the users email name to the email service host and to the email service domain.
 `{2,6}`: Which sets the minimum and maximum allowable number of characters that can be used in the email service domain.
+
 ### Grouping Constructs
+In the provided data, there are three separate groups from which we can search for data:
+The first group is delineated by the following characters `([a-z0-9_\.-]+)` and contains the email name. You can see that this group allows for any lowercase letter, any number from 0-9, an underscore, a period, and a dash. This group also allows for any combination of these characters and does not limit the length of the users email name.
+The second group is delineated by the following characters `([\da-z\.-]+)`and contains the email service host. You can see that this group allows for any digit, any lowercase letter, a period and a dash. This group also allows for any combination of these characters and does not limit the length of the users email service host.
+The third group is delineated by the following characters `([a-z\.]{2,6})` and contains the email service domain. You can see that this group allows for any lowercase letter and a period. This group also allows for any combination of these characters and limits the length of the users email service domain to a minimum of 2 characters and a maximum of 6 characters.
 
 ### Bracket Expressions
 
